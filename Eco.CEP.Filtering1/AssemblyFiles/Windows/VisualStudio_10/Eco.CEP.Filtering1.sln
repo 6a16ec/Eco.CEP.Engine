@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Eco.CEP.Filtering1", "Eco.CEP.Filtering1.vcxproj", "{D5FCE9B0-EFDA-4BF5-95F6-0438B64F23EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Eco.CEP.Filtering1UnitTest", "Eco.CEP.Filtering1UnitTest.vcxproj", "{C7FB1D0D-115D-4F21-9B70-E21BD03CF600}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DynamicDebug|Win32 = DynamicDebug|Win32
+		DynamicRelease|Win32 = DynamicRelease|Win32
+		StaticDebug|Win32 = StaticDebug|Win32
+		StaticRelease|Win32 = StaticRelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5FCE9B0-EFDA-4BF5-95F6-0438B64F23EE}.DynamicDebug|Win32.ActiveCfg = DynamicDebug|Win32
+		{D5FCE9B0-EFDA-4BF5-95F6-0438B64F23EE}.DynamicDebug|Win32.Build.0 = DynamicDebug|Win32
+		{D5FCE9B0-EFDA-4BF5-95F6-0438B64F23EE}.DynamicRelease|Win32.ActiveCfg = DynamicRelease|Win32
+		{D5FCE9B0-EFDA-4BF5-95F6-0438B64F23EE}.DynamicRelease|Win32.Build.0 = DynamicRelease|Win32
+		{D5FCE9B0-EFDA-4BF5-95F6-0438B64F23EE}.StaticDebug|Win32.ActiveCfg = StaticDebug|Win32
+		{D5FCE9B0-EFDA-4BF5-95F6-0438B64F23EE}.StaticDebug|Win32.Build.0 = StaticDebug|Win32
+		{D5FCE9B0-EFDA-4BF5-95F6-0438B64F23EE}.StaticRelease|Win32.ActiveCfg = StaticRelease|Win32
+		{C7FB1D0D-115D-4F21-9B70-E21BD03CF600}.DynamicDebug|Win32.ActiveCfg = StaticRelease|Win32
+		{C7FB1D0D-115D-4F21-9B70-E21BD03CF600}.DynamicDebug|Win32.Build.0 = StaticRelease|Win32
+		{C7FB1D0D-115D-4F21-9B70-E21BD03CF600}.DynamicRelease|Win32.ActiveCfg = StaticRelease|Win32
+		{C7FB1D0D-115D-4F21-9B70-E21BD03CF600}.DynamicRelease|Win32.Build.0 = StaticRelease|Win32
+		{C7FB1D0D-115D-4F21-9B70-E21BD03CF600}.StaticDebug|Win32.ActiveCfg = StaticDebug|Win32
+		{C7FB1D0D-115D-4F21-9B70-E21BD03CF600}.StaticDebug|Win32.Build.0 = StaticDebug|Win32
+		{C7FB1D0D-115D-4F21-9B70-E21BD03CF600}.StaticRelease|Win32.ActiveCfg = StaticRelease|Win32
+		{C7FB1D0D-115D-4F21-9B70-E21BD03CF600}.StaticRelease|Win32.Build.0 = StaticRelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,153 @@
+﻿Build started 12.06.2021 15:13:37.
+     1>Project "C:\Users\Nikita\Documents\Eco.CEP.Engine1\Eco.CEP.PatternMatching1\AssemblyFiles\Windows\VisualStudio_10\Eco.CEP.PatternMatching1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Eco.CEP.PatternMatching1\DynamicDebug\Eco.CEP.PatternMatching1.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\HeaderFiles /I..\..\..\SharedFiles /I"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Eco.Framework\Eco.Core1\SharedFiles" /I"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Eco.Framework\Eco.String1\SharedFiles" /I"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Eco.Framework\Eco.List1\SharedFiles" /I"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Eco.Framework\Eco.Comparator1\SharedFiles" /I"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Eco.Framework\Eco.MemoryManager1\SharedFiles" /I"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Eco.Framework\Eco.InterfaceBus1\SharedFiles" /ZI /nologo /W3 /WX- /Od /Oy- /D ECO_WIN32 /D _DEBUG /D _WINDOWS /D ECO_DLL /D UGUID_UTILITY /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Eco.CEP.PatternMatching1\DynamicDebug\\" /Fd"Eco.CEP.PatternMatching1\DynamicDebug\vc100.pdb" /Gz /TC /analyze- /errorReport:prompt ..\..\..\SourceFiles\CEcoCEPPatternMatching1.c ..\..\..\SourceFiles\CEcoCEPPatternMatching1Factory.c
+         CEcoCEPPatternMatching1Factory.c
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sharedfiles\iecoceppatternmatching1.h(46): error C2061: syntax error : identifier 'IEcoCEPPatternMatching1'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sharedfiles\iecoceppatternmatching1.h(46): error C2059: syntax error : ';'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sharedfiles\iecoceppatternmatching1.h(46): error C2449: found '{' at file scope (missing function header?)
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sharedfiles\iecoceppatternmatching1.h(48): error C2059: syntax error : '}'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(49): error C2143: syntax error : missing ')' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(49): error C2081: 'IEcoCEPPatternMatching1' : name in formal parameter list illegal
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(49): error C2143: syntax error : missing '{' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(49): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(51): error C2143: syntax error : missing ')' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(51): error C2143: syntax error : missing '{' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(51): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1factory.h(28): error C2016: C requires that a struct or union has at least one member
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1factory.h(28): error C2061: syntax error : identifier 'IEcoComponentFactoryVTbl'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1factory.h(40): error C2059: syntax error : '}'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(42): error C2039: 'pVTbl' : is not a member of 'IEcoUnknown'
+                 c:\program files (x86)\microsoft visual studio 10.0\eco.framework\eco.core1\sharedfiles\iecobase1.h(111) : see declaration of 'IEcoUnknown'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(59): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(59): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(59): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(59): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(65): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(65): error C2223: left of '->m_cRef' must point to struct/union
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(65): warning C4033: 'CEcoCEPPatternMatching1Factory_AddRef' must return a value
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(79): error C2061: syntax error : identifier 'CEcoCEPPatternMatching1Factory_Release'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(79): error C2059: syntax error : ';'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(79): error C2059: syntax error : 'type'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(109): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(109): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(109): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(109): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(110): error C2275: 'int16_t' : illegal use of this type as an expression
+                 c:\program files (x86)\microsoft visual studio 10.0\eco.framework\eco.core1\sharedfiles\iecobase1.h(31) : see declaration of 'int16_t'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(110): error C2146: syntax error : missing ';' before identifier 'result'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(110): error C2065: 'result' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(117): error C2065: 'result' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(117): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(117): error C2223: left of '->m_pInitInstance' must point to struct/union
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(119): error C2065: 'result' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(134): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(134): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(134): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(134): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(135): error C2275: 'IEcoUnknown' : illegal use of this type as an expression
+                 c:\program files (x86)\microsoft visual studio 10.0\eco.framework\eco.core1\sharedfiles\iecobase1.h(118) : see declaration of 'IEcoUnknown'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(135): error C2065: 'pIUnk' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(136): error C2275: 'int16_t' : illegal use of this type as an expression
+                 c:\program files (x86)\microsoft visual studio 10.0\eco.framework\eco.core1\sharedfiles\iecobase1.h(31) : see declaration of 'int16_t'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(136): error C2146: syntax error : missing ';' before identifier 'result'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(136): error C2065: 'result' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(149): error C2065: 'result' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(149): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(149): error C2223: left of '->m_pInstance' must point to struct/union
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(149): error C2065: 'pIUnk' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(150): error C2065: 'result' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(150): error C2065: 'pIUnk' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(155): error C2065: 'result' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(155): error C2039: 'pVTbl' : is not a member of 'IEcoComponentFactory'
+                 c:\program files (x86)\microsoft visual studio 10.0\eco.framework\eco.core1\sharedfiles\iecobase1.h(125) : see declaration of 'IEcoComponentFactory'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(155): error C2065: 'pIUnk' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(158): error C2065: 'result' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(158): error C2065: 'pIUnk' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(158): error C2223: left of '->pVTbl' must point to struct/union
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(158): error C2065: 'pIUnk' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(161): error C2065: 'pIUnk' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(161): error C2223: left of '->pVTbl' must point to struct/union
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(161): error C2065: 'pIUnk' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(163): error C2065: 'result' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(178): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(178): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(178): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(178): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(184): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(184): error C2223: left of '->m_Name' must point to struct/union
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(184): warning C4033: 'CEcoCEPPatternMatching1Factory_get_Name' must return a value
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(198): error C2143: syntax error : missing '{' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(199): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(199): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(199): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(199): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(205): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(205): error C2223: left of '->m_Version' must point to struct/union
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(205): warning C4033: 'CEcoCEPPatternMatching1Factory_get_Version' must return a value
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(219): error C2143: syntax error : missing '{' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(220): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(220): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(220): error C2065: 'CEcoCEPPatternMatching1Factory' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(220): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(226): error C2065: 'pCMe' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(226): error C2223: left of '->m_Manufacturer' must point to struct/union
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(226): warning C4033: 'CEcoCEPPatternMatching1Factory_get_Manufacturer' must return a value
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(230): error C2061: syntax error : identifier 'g_x32A79131E0F34E549D356E2891CE310FFactoryVTbl'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(230): error C2059: syntax error : ';'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(230): error C2513: '/*global*/ ' : no variable declared before '='
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(233): error C2065: 'CEcoCEPPatternMatching1Factory_Release' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(252): error C2061: syntax error : identifier 'g_x32A79131E0F34E549D356E2891CE310FFactory'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(252): error C2059: syntax error : ';'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(252): error C2513: '/*global*/ ' : no variable declared before '='
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(253): error C2065: 'g_x32A79131E0F34E549D356E2891CE310FFactoryVTbl' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(255): error C2065: 'createCEcoCEPPatternMatching1' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(263): error C2061: syntax error : identifier 'GetIEcoComponentFactoryPtr'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(263): error C2059: syntax error : ';'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1factory.c(263): error C2059: syntax error : ')'
+         CEcoCEPPatternMatching1.c
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sharedfiles\iecoceppatternmatching1.h(46): error C2061: syntax error : identifier 'IEcoCEPPatternMatching1'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sharedfiles\iecoceppatternmatching1.h(46): error C2059: syntax error : ';'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sharedfiles\iecoceppatternmatching1.h(46): error C2449: found '{' at file scope (missing function header?)
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sharedfiles\iecoceppatternmatching1.h(48): error C2059: syntax error : '}'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(49): error C2143: syntax error : missing ')' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(49): error C2081: 'IEcoCEPPatternMatching1' : name in formal parameter list illegal
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(49): error C2143: syntax error : missing '{' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(49): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(51): error C2143: syntax error : missing ')' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(51): error C2143: syntax error : missing '{' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\headerfiles\cecoceppatternmatching1.h(51): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(47): error C2065: 'IEcoCEPPatternMatching1' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(47): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(51): error C2065: 'IEcoCEPPatternMatching1' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(51): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(71): error C2061: syntax error : identifier 'CEcoCEPPatternMatching1_AddRef'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(71): error C2059: syntax error : ';'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(71): error C2059: syntax error : 'type'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(106): warning C4013: 'deleteCEcoCEPPatternMatching1' undefined; assuming extern returning int
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(106): error C2065: 'IEcoCEPPatternMatching1' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(106): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(123): error C2061: syntax error : identifier 'CEcoCEPPatternMatching1_MyFunction'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(123): error C2059: syntax error : ';'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(123): error C2059: syntax error : 'type'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(179): error C2065: 'CEcoCEPPatternMatching1_AddRef' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(179): error C2099: initializer is not a constant
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(182): error C2065: 'CEcoCEPPatternMatching1_MyFunction' : undeclared identifier
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(182): error C2099: initializer is not a constant
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(196): error C2143: syntax error : missing ')' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(196): error C2081: 'IEcoCEPPatternMatching1' : name in formal parameter list illegal
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(196): error C2143: syntax error : missing '{' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(196): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(196): error C2054: expected '(' to follow 'ppIEcoCEPPatternMatching1'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(267): error C2143: syntax error : missing ')' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(267): error C2143: syntax error : missing '{' before '*'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(267): error C2059: syntax error : ')'
+     1>c:\users\nikita\documents\eco.cep.engine1\eco.cep.patternmatching1\sourcefiles\cecoceppatternmatching1.c(267): error C2054: expected '(' to follow 'pIEcoCEPPatternMatching1'
+         Generating Code...
+     1>Done Building Project "C:\Users\Nikita\Documents\Eco.CEP.Engine1\Eco.CEP.PatternMatching1\AssemblyFiles\Windows\VisualStudio_10\Eco.CEP.PatternMatching1.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.24

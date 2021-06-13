@@ -1,0 +1,50 @@
+﻿Build started 12.06.2021 18:26:53.
+     1>Project "D:\Eco.CEP.Engine1\1\2\3\Eco.CEP.Filtering1\AssemblyFiles\Windows\VisualStudio_10\Eco.CEP.Filtering1UnitTest.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Eco.CEP.Filtering1UnitTest\StaticRelease\Eco.CEP.Filtering1UnitTest.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\SharedFiles /I..\..\..\HeaderFiles /I..\..\..\UnitTestFiles\SharedFiles /I..\..\..\UnitTestFiles\HeaderFiles /I..\..\..\..\Eco.Core1\SharedFiles /I..\..\..\..\Eco.FileSystemManagement1\SharedFiles /I..\..\..\..\Eco.Comparator1\SharedFiles /I..\..\..\..\Eco.DateTime1\SharedFiles /I..\..\..\..\Eco.Log1\SharedFiles /I..\..\..\..\Eco.List1\SharedFiles /I..\..\..\..\Eco.String1\SharedFiles /I..\..\..\..\Eco.InterfaceBus1\SharedFiles /I..\..\..\..\Eco.TaskScheduler1\SharedFiles /I..\..\..\..\Eco.MemoryManager1\SharedFiles /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D ECO_WIN32 /D NDEBUG /D _CONSOLE /D ECO_LIB /D UGUID_UTILITY /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Eco.CEP.Filtering1UnitTest\StaticRelease\\" /Fd"Eco.CEP.Filtering1UnitTest\StaticRelease\vc100.pdb" /Gz /TC /analyze- /errorReport:prompt ..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c
+         EcoCEPFiltering1.c
+     1>d:\eco.cep.engine1\1\2\3\eco.cep.filtering1\sharedfiles\IEcoCEPFiltering1.h(46): error C2061: syntax error : identifier 'IEcoCEPFiltering1'
+     1>d:\eco.cep.engine1\1\2\3\eco.cep.filtering1\sharedfiles\IEcoCEPFiltering1.h(46): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\1\2\3\eco.cep.filtering1\sharedfiles\IEcoCEPFiltering1.h(46): error C2449: found '{' at file scope (missing function header?)
+     1>d:\eco.cep.engine1\1\2\3\eco.cep.filtering1\sharedfiles\IEcoCEPFiltering1.h(48): error C2059: syntax error : '}'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(50): error C2065: 'IEcoCEPFiltering1' : undeclared identifier
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(50): error C2065: 'pIEcoCEPFiltering1' : undeclared identifier
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(50): error C2106: '=' : left operand must be l-value
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(54): error C2039: 'pVTbl' : is not a member of 'IEcoUnknown'
+                 D:\Eco.CEP.Engine1\1\2\3\Eco.Core1\SharedFiles\IEcoBase1.h(111) : see declaration of 'IEcoUnknown'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(62): error C2039: 'pVTbl' : is not a member of 'IEcoSystem1'
+                 D:\Eco.CEP.Engine1\1\2\3\Eco.Core1\SharedFiles\IEcoSystem1.h(33) : see declaration of 'IEcoSystem1'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(69): error C2039: 'pVTbl' : is not a member of 'IEcoInterfaceBus1'
+                 d:\eco.cep.engine1\1\2\3\eco.interfacebus1\sharedfiles\IEcoInterfaceBus1.h(31) : see declaration of 'IEcoInterfaceBus1'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(76): error C2039: 'pVTbl' : is not a member of 'IEcoInterfaceBus1'
+                 d:\eco.cep.engine1\1\2\3\eco.interfacebus1\sharedfiles\IEcoInterfaceBus1.h(31) : see declaration of 'IEcoInterfaceBus1'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(85): error C2039: 'pVTbl' : is not a member of 'IEcoMemoryAllocator1'
+                 D:\Eco.CEP.Engine1\1\2\3\Eco.MemoryManager1\SharedFiles\IEcoMemoryAllocator1.h(30) : see declaration of 'IEcoMemoryAllocator1'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(88): error C2039: 'pVTbl' : is not a member of 'IEcoMemoryAllocator1'
+                 D:\Eco.CEP.Engine1\1\2\3\Eco.MemoryManager1\SharedFiles\IEcoMemoryAllocator1.h(30) : see declaration of 'IEcoMemoryAllocator1'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(92): error C2039: 'pVTbl' : is not a member of 'IEcoInterfaceBus1'
+                 d:\eco.cep.engine1\1\2\3\eco.interfacebus1\sharedfiles\IEcoInterfaceBus1.h(31) : see declaration of 'IEcoInterfaceBus1'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(92): error C2065: 'pIEcoCEPFiltering1' : undeclared identifier
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(93): error C2065: 'pIEcoCEPFiltering1' : undeclared identifier
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(99): error C2065: 'pIEcoCEPFiltering1' : undeclared identifier
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(99): error C2223: left of '->pVTbl' must point to struct/union
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(99): error C2065: 'pIEcoCEPFiltering1' : undeclared identifier
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(103): error C2039: 'pVTbl' : is not a member of 'IEcoMemoryAllocator1'
+                 D:\Eco.CEP.Engine1\1\2\3\Eco.MemoryManager1\SharedFiles\IEcoMemoryAllocator1.h(30) : see declaration of 'IEcoMemoryAllocator1'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(109): error C2039: 'pVTbl' : is not a member of 'IEcoInterfaceBus1'
+                 d:\eco.cep.engine1\1\2\3\eco.interfacebus1\sharedfiles\IEcoInterfaceBus1.h(31) : see declaration of 'IEcoInterfaceBus1'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(114): error C2039: 'pVTbl' : is not a member of 'IEcoMemoryAllocator1'
+                 D:\Eco.CEP.Engine1\1\2\3\Eco.MemoryManager1\SharedFiles\IEcoMemoryAllocator1.h(30) : see declaration of 'IEcoMemoryAllocator1'
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(118): error C2065: 'pIEcoCEPFiltering1' : undeclared identifier
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(119): error C2065: 'pIEcoCEPFiltering1' : undeclared identifier
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(119): error C2223: left of '->pVTbl' must point to struct/union
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(119): error C2065: 'pIEcoCEPFiltering1' : undeclared identifier
+     1>..\..\..\UnitTestFiles\SourceFiles\EcoCEPFiltering1.c(125): error C2039: 'pVTbl' : is not a member of 'IEcoSystem1'
+                 D:\Eco.CEP.Engine1\1\2\3\Eco.Core1\SharedFiles\IEcoSystem1.h(33) : see declaration of 'IEcoSystem1'
+     1>Done Building Project "D:\Eco.CEP.Engine1\1\2\3\Eco.CEP.Filtering1\AssemblyFiles\Windows\VisualStudio_10\Eco.CEP.Filtering1UnitTest.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.15
