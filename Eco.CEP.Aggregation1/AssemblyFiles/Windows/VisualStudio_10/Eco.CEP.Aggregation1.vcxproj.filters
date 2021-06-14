@@ -29,10 +29,10 @@
     <ClInclude Include="..\..\..\HeaderFiles\CEcoCEPAggregation1Factory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\SharedFiles\IdEcoCEPAggregation1.h">
+    <ClInclude Include="..\..\..\SharedFiles\IEcoCEPAggregation1.h">
       <Filter>Shared Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\SharedFiles\IEcoCEPAggregation1.h">
+    <ClInclude Include="..\..\..\SharedFiles\IdEcoCEPAggregation1.h">
       <Filter>Shared Files</Filter>
     </ClInclude>
   </ItemGroup>

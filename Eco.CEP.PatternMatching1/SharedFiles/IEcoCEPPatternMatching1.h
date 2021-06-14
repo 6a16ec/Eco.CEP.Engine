@@ -40,6 +40,11 @@ typedef struct IEcoCEPPatternMatching1VTbl {
 
     /* IEcoCEPPatternMatching1 */
     int16_t (*MyFunction)(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ char_t* Name, /* out */ char_t** CopyName);
+	int16_t (*weakHashFunc)(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ char_t* str,  int16_t mod, /* out */ int16_t* result);
+	int16_t (*reliableHashFunc)(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ char_t* str,  int16_t mod, /* out */ int16_t* result);
+	int16_t (*prime)(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ int16_t number, /* out */ int16_t* result);
+	int16_t (*insertItem)(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ char* str);
+	int16_t (*searchItem)(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ char* str, /* out */ int16_t* result);
 
 } IEcoCEPPatternMatching1VTbl, *IEcoCEPPatternMatching1VTblPtr;
 

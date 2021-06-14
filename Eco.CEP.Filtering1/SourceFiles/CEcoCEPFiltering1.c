@@ -120,7 +120,7 @@ uint32_t CEcoCEPFiltering1_Release(/* in */ struct IEcoCEPFiltering1* me) {
  * </описание>
  *
  */
-int16_t CEcoCEPFiltering1_MyFunction(/* in */ struct IEcoCEPFiltering1* me, /* in */ char_t* Name, /* out */ char_t** copyName) {
+int16_t CEcoCEPFiltering1_range(/* in */ struct IEcoCEPFiltering1* me, /* in */ int16_t *data, int32_t len, int16_t min, int32_t max, /* out */ int16_t *output, int16_t *out_len) {
     CEcoCEPFiltering1* pCMe = (CEcoCEPFiltering1*)me;
     int16_t index = 0;
 
@@ -129,21 +129,98 @@ int16_t CEcoCEPFiltering1_MyFunction(/* in */ struct IEcoCEPFiltering1* me, /* i
         return -1;
     }
 
-    /* Копирование строки */
-    while(Name[index] != 0) {
-        index++;
-    }
-    pCMe->m_Name = (char_t*)pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, index + 1);
+	index = 0;
+	(*out_len) = 0;
+	while (index < len) {
+		if (data[index] >= min) {
+			if (data[index] <= max) {
+				(*out_len) = (*out_len) + 1;			
+			}
+		}
+		index++;
+	}
+	output = (char_t*)pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, (*out_len));
+
     index = 0;
-    while(Name[index] != 0) {
-        pCMe->m_Name[index] = Name[index];
+	(*out_len) = 0;
+    while(data[index] != 0) {
+        if (data[index] >= min) {
+			if (data[index] <= max) {
+				output[(*out_len)] = data[index];
+				(*out_len) = (*out_len) + 1;			
+			}
+		}
         index++;
     }
-    *copyName = pCMe->m_Name;
 
     return 0;
 }
 
+
+int16_t CEcoCEPFiltering1_less(/* in */ struct IEcoCEPFiltering1* me, /* in */ int16_t *data, int32_t len, int32_t max, /* out */ int16_t *output, int16_t *out_len) {
+    CEcoCEPFiltering1* pCMe = (CEcoCEPFiltering1*)me;
+    int16_t index = 0;
+
+    /* Проверка указателей */
+    if (me == 0 || Name == 0 || copyName == 0) {
+        return -1;
+    }
+
+	index = 0;
+	(*out_len) = 0;
+	while (index < len) {
+		if (data[index] <= max) {
+			(*out_len) = (*out_len) + 1;			
+		}
+		index++;
+	}
+	output = (char_t*)pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, (*out_len));
+
+    index = 0;
+	(*out_len) = 0;
+    while(data[index] != 0) {
+		if (data[index] <= max) {
+			output[(*out_len)] = data[index];
+			(*out_len) = (*out_len) + 1;			
+		}
+        index++;
+    }
+
+    return 0;
+}
+
+
+int16_t CEcoCEPFiltering1_more(/* in */ struct IEcoCEPFiltering1* me, /* in */ int16_t *data, int32_t len, int16_t min,/* out */ int16_t *output, int16_t *out_len) {
+    CEcoCEPFiltering1* pCMe = (CEcoCEPFiltering1*)me;
+    int16_t index = 0;
+
+    /* Проверка указателей */
+    if (me == 0 || Name == 0 || copyName == 0) {
+        return -1;
+    }
+
+	index = 0;
+	(*out_len) = 0;
+	while (index < len) {
+		if (data[index] >= min) {
+			(*out_len) = (*out_len) + 1;
+		}
+		index++;
+	}
+	output = (char_t*)pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, (*out_len));
+
+    index = 0;
+	(*out_len) = 0;
+    while(data[index] != 0) {
+        if (data[index] >= min) {
+			output[(*out_len)] = data[index];
+			(*out_len) = (*out_len) + 1;	
+		}
+        index++;
+    }
+
+    return 0;
+}
 
 
 /*
@@ -178,7 +255,10 @@ IEcoCEPFiltering1VTbl g_xE5D3D2E09AE142EEADAE1A09B63E4393VTbl = {
     CEcoCEPFiltering1_QueryInterface,
     CEcoCEPFiltering1_AddRef,
     CEcoCEPFiltering1_Release,
-    CEcoCEPFiltering1_MyFunction
+    CEcoCEPFiltering1_MyFunction,
+	CEcoCEPFiltering1_range,
+	CEcoCEPFiltering1_less,
+	CEcoCEPFiltering1_more
 };
 
 

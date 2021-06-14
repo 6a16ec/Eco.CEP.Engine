@@ -144,6 +144,87 @@ int16_t CEcoCEPPatternMatching1_MyFunction(/* in */ struct IEcoCEPPatternMatchin
     return 0;
 }
 
+int16_t CEcoCEPPatternMatching1_weakHashFunc(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ char_t* str,  int16_t mod, /* out */ int16_t* result) {
+	CEcoCEPPatternMatching1* pCMe = (CEcoCEPPatternMatching1*)me;
+	index = 0;
+    while(str[index] != 0) {
+        index++;
+	}
+     (*result) = index % mod;
+}
+    
+int16_t CEcoCEPPatternMatching1_reliableHashFunc(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ char_t* str,  int16_t mod, /* out */ int16_t* result) {
+	CEcoCEPPatternMatching1* pCMe = (CEcoCEPPatternMatching1*)me;
+    int16_t result = 0;
+    int16_t base_multi = 1;
+	index = 0;
+    while(str[index] != 0) {
+    (*result) += (str[i] * base_multi) % mod);
+		(*result) %= mod;
+		base_multi *= base;
+        index++;
+    }
+}
+  
+int16_t CEcoCEPPatternMatching1_prime(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ int16_t number, /* out */ int16_t* result) {
+	CEcoCEPPatternMatching1* pCMe = (CEcoCEPPatternMatching1*)me;
+    (*result) = 0;
+    if (number >= 2) {
+        result = 1;
+    }
+    for (int16_t i = 2; i*i <= number; ++i) {
+        if (number % i == 0) {
+            result = 1;
+        }
+    }
+    return result;
+}
+    
+int16_t CEcoCEPPatternMatching1_insertItem(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ char* str) {
+	CEcoCEPPatternMatching1* pCMe = (CEcoCEPPatternMatching1*)me;
+    int16_t x;
+	CEcoCEPPatternMatching1_reliableHashFunc(pCMe, str, 777, x);
+
+	index = 0;
+    while(str[index] != 0) {
+        index++;
+    }
+
+	
+    while (1) {
+        if (pCMe->table[x] == 0) {
+            pCMe->table[x] = (char_t*)pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, index);
+			index = 0;
+			while(str[index]!=0) {
+				table[x][index] = str[index];
+			}
+            break;
+        }
+        x = (x + pCMe->shift) % x->tableSize;
+    }
+	return 0;
+}
+
+int16_t CEcoCEPPatternMatching1_searchItem(/* in */ struct IEcoCEPPatternMatching1* me, /* in */ char* str, /* out */ int16_t* result) {
+	CEcoCEPPatternMatching1* pCMe = (CEcoCEPPatternMatching1*)me;
+    int16_t x;
+	CEcoCEPPatternMatching1_reliableHashFunc(pCMe, str, 777, x);
+	
+    int16_t len = 0;
+	while(str[len]!=0) {
+		len += 1;
+	}
+    while (index < len) {
+        if (pCMe->table[index] == 0) {
+			(*result) = 1;
+            break;
+        }
+        index = (index + pCMe->shift) % pCMe->tableSize;
+    }
+	(*result) = 0;
+    return 0;
+}
+
 
 
 /*
@@ -178,7 +259,12 @@ IEcoCEPPatternMatching1VTbl g_xF79318D9156E4A66BCC9382F1B279E3CVTbl = {
     CEcoCEPPatternMatching1_QueryInterface,
     CEcoCEPPatternMatching1_AddRef,
     CEcoCEPPatternMatching1_Release,
-    CEcoCEPPatternMatching1_MyFunction
+    CEcoCEPPatternMatching1_MyFunction,
+	int16_t CEcoCEPPatternMatching1_weakHashFunc,
+	int16_t CEcoCEPPatternMatching1_reliableHashFunc,
+	int16_t CEcoCEPPatternMatching1_prime,
+	int16_t CEcoCEPPatternMatching1_insertItem,
+	int16_t CEcoCEPPatternMatching1_searchItem
 };
 
 
@@ -243,6 +329,10 @@ int16_t createCEcoCEPPatternMatching1(/* in */ IEcoUnknown* pIUnkSystem, /* in *
 
     /* Инициализация данных */
     pCMe->m_Name = 0;
+    pCMe->shift = 7;
+	pCMe->table = (char_t*)pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, 1000);
+	pCMe->table_count = (char_t*)pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, 1000);
+	pCMe->tableSize = 1000;
 
     /* Возврат указателя на интерфейс */
     *ppIEcoCEPPatternMatching1 = (IEcoCEPPatternMatching1*)pCMe;

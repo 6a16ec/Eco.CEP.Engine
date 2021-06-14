@@ -28,6 +28,7 @@ typedef struct CEcoCEPAggregation1 {
 
     /* Таблица функций интерфейса IEcoCEPAggregation1 */
     IEcoCEPAggregation1VTbl* m_pVTblIEcoCEPAggregation1;
+	CEcoCEPAggregation1* m_aggr;
 
     /* Счетчик ссылок */
     uint32_t m_cRef;
@@ -39,7 +40,7 @@ typedef struct CEcoCEPAggregation1 {
     IEcoSystem1* m_pISys;
 
     /* Данные экземпляра */
-    char_t* m_Name;
+    int16_t* data_copy;
 
 } CEcoCEPAggregation1, *CEcoCEPAggregation1Ptr;
 

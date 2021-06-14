@@ -35,7 +35,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v100</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -180,6 +180,8 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\HeaderFiles\CEcoCEPEngine1.h" />
     <ClInclude Include="..\..\..\HeaderFiles\CEcoCEPEngine1Factory.h" />
+    <ClInclude Include="..\..\..\HeaderFiles\IdEcoCEPAggregation1.h" />
+    <ClInclude Include="..\..\..\HeaderFiles\IEcoCEPAggregation1.h" />
     <ClInclude Include="..\..\..\SharedFiles\IdEcoCEPEngine1.h" />
     <ClInclude Include="..\..\..\SharedFiles\IEcoCEPEngine1.h" />
     <ClInclude Include="..\..\..\SharedFiles\IEcoCEPEngine1Input.h" />

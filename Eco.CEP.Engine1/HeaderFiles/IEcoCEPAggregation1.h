@@ -40,15 +40,6 @@ typedef struct IEcoCEPAggregation1VTbl {
 
     /* IEcoCEPAggregation1 */
     int16_t (*MyFunction)(/* in */ struct IEcoCEPAggregation1* me, /* in */ char_t* Name, /* out */ char_t** CopyName);
-	int16_t (*sum)(/* in */ struct IEcoCEPAggregation1* me, /* in */ int16_t* data, int16_t len, /* out */ int16_t* result);
-	int16_t (*average)(/* in */ struct IEcoCEPAggregation1* me, /* in */ int16_t* data, int16_t len, /* out */ double_t* result);
-	int16_t (*sqrt)(/* in */ struct IEcoCEPAggregation1* me, /* in */ double_t* number,  /* out */ double_t* result); 
-	int16_t (*median)(/* in */ struct IEcoCEPAggregation1* me, /* in */ int16_t* data, int16_t len, /* out */ double_t* result); 
-	int16_t (*minimum)(/* in */ struct IEcoCEPAggregation1* me, /* in */ int16_t* data, int16_t len, /* out */ double_t* result); 
-	int16_t (*maximum)(/* in */ struct IEcoCEPAggregation1* me, /* in */ int16_t* data, int16_t len, /* out */ double_t* result); 
-	int16_t (*variance)(/* in */ struct IEcoCEPAggregation1* me, /* in */ int16_t* data, int16_t len, /* out */ double_t* result);
-	int16_t (*deviation)(/* in */ struct IEcoCEPAggregation1* me, /* in */ int16_t* data, int16_t len, /* out */ double_t* result);
-	int16_t (*set)(/* in */ struct IEcoCEPAggregation1* me, /* in */ int16_t* data, int16_t len, /* out */ double_t* result);
 
 } IEcoCEPAggregation1VTbl, *IEcoCEPAggregation1VTblPtr;
 

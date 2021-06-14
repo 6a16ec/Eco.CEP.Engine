@@ -1,0 +1,169 @@
+﻿Build started 13.06.2021 15:38:31.
+     1>Project "D:\Eco.CEP.Engine1\github\Eco.CEP.Engine1\AssemblyFiles\Windows\VisualStudio_10\Eco.CEP.Engine1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Eco.CEP.Engine1\DynamicDebug\Eco.CEP.Engine1.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\HeaderFiles /I..\..\..\SharedFiles /I..\..\..\..\Eco.Core1\SharedFiles /I..\..\..\..\Eco.String1\SharedFiles /I..\..\..\..\Eco.List1\SharedFiles /I..\..\..\..\Eco.Comparator1\SharedFiles /I..\..\..\..\Eco.MemoryManager1\SharedFiles /I..\..\..\..\Eco.InterfaceBus1\SharedFiles /ZI /nologo /W3 /WX- /Od /Oy- /D ECO_WIN32 /D _DEBUG /D _WINDOWS /D ECO_DLL /D UGUID_UTILITY /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Eco.CEP.Engine1\DynamicDebug\\" /Fd"Eco.CEP.Engine1\DynamicDebug\vc100.pdb" /Gz /TC /analyze- /errorReport:prompt ..\..\..\SourceFiles\CEcoCEPEngine1.c ..\..\..\SourceFiles\CEcoCEPEngine1Factory.c
+         CEcoCEPEngine1Factory.c
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sharedfiles\iecocepengine1.h(46): error C2061: syntax error : identifier 'IEcoCEPEngine1'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sharedfiles\iecocepengine1.h(46): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sharedfiles\iecocepengine1.h(46): error C2449: found '{' at file scope (missing function header?)
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sharedfiles\iecocepengine1.h(48): error C2059: syntax error : '}'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(52): error C2143: syntax error : missing ')' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(52): error C2081: 'IEcoCEPEngine1' : name in formal parameter list illegal
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(52): error C2143: syntax error : missing '{' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(52): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(54): error C2143: syntax error : missing ')' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(54): error C2143: syntax error : missing '{' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(54): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1factory.h(28): error C2016: C requires that a struct or union has at least one member
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1factory.h(28): error C2061: syntax error : identifier 'IEcoComponentFactoryVTbl'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1factory.h(40): error C2059: syntax error : '}'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(42): error C2039: 'pVTbl' : is not a member of 'IEcoUnknown'
+                 d:\eco.cep.engine1\github\eco.core1\sharedfiles\iecobase1.h(111) : see declaration of 'IEcoUnknown'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(59): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(59): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(59): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(59): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(65): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(65): error C2223: left of '->m_cRef' must point to struct/union
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(65): warning C4033: 'CEcoCEPEngine1Factory_AddRef' must return a value
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(79): error C2061: syntax error : identifier 'CEcoCEPEngine1Factory_Release'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(79): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(79): error C2059: syntax error : 'type'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(109): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(109): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(109): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(109): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(110): error C2275: 'int16_t' : illegal use of this type as an expression
+                 d:\eco.cep.engine1\github\eco.core1\sharedfiles\iecobase1.h(31) : see declaration of 'int16_t'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(110): error C2146: syntax error : missing ';' before identifier 'result'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(110): error C2065: 'result' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(117): error C2065: 'result' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(117): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(117): error C2223: left of '->m_pInitInstance' must point to struct/union
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(119): error C2065: 'result' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(134): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(134): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(134): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(134): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(135): error C2275: 'IEcoUnknown' : illegal use of this type as an expression
+                 d:\eco.cep.engine1\github\eco.core1\sharedfiles\iecobase1.h(118) : see declaration of 'IEcoUnknown'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(135): error C2065: 'pIUnk' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(136): error C2275: 'int16_t' : illegal use of this type as an expression
+                 d:\eco.cep.engine1\github\eco.core1\sharedfiles\iecobase1.h(31) : see declaration of 'int16_t'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(136): error C2146: syntax error : missing ';' before identifier 'result'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(136): error C2065: 'result' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(149): error C2065: 'result' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(149): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(149): error C2223: left of '->m_pInstance' must point to struct/union
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(149): error C2065: 'pIUnk' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(150): error C2065: 'result' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(150): error C2065: 'pIUnk' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(155): error C2065: 'result' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(155): error C2039: 'pVTbl' : is not a member of 'IEcoComponentFactory'
+                 d:\eco.cep.engine1\github\eco.core1\sharedfiles\iecobase1.h(125) : see declaration of 'IEcoComponentFactory'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(155): error C2065: 'pIUnk' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(158): error C2065: 'result' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(158): error C2065: 'pIUnk' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(158): error C2223: left of '->pVTbl' must point to struct/union
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(158): error C2065: 'pIUnk' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(161): error C2065: 'pIUnk' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(161): error C2223: left of '->pVTbl' must point to struct/union
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(161): error C2065: 'pIUnk' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(163): error C2065: 'result' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(178): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(178): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(178): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(178): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(184): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(184): error C2223: left of '->m_Name' must point to struct/union
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(184): warning C4033: 'CEcoCEPEngine1Factory_get_Name' must return a value
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(198): error C2143: syntax error : missing '{' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(199): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(199): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(199): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(199): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(205): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(205): error C2223: left of '->m_Version' must point to struct/union
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(205): warning C4033: 'CEcoCEPEngine1Factory_get_Version' must return a value
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(219): error C2143: syntax error : missing '{' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(220): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(220): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(220): error C2065: 'CEcoCEPEngine1Factory' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(220): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(226): error C2065: 'pCMe' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(226): error C2223: left of '->m_Manufacturer' must point to struct/union
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(226): warning C4033: 'CEcoCEPEngine1Factory_get_Manufacturer' must return a value
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(230): error C2061: syntax error : identifier 'g_xA1AC492621FE4596816EF9BF5150045CFactoryVTbl'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(230): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(230): error C2513: '/*global*/ ' : no variable declared before '='
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(233): error C2065: 'CEcoCEPEngine1Factory_Release' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(252): error C2061: syntax error : identifier 'g_xA1AC492621FE4596816EF9BF5150045CFactory'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(252): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(252): error C2513: '/*global*/ ' : no variable declared before '='
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(253): error C2065: 'g_xA1AC492621FE4596816EF9BF5150045CFactoryVTbl' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(255): error C2065: 'createCEcoCEPEngine1' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(263): error C2061: syntax error : identifier 'GetIEcoComponentFactoryPtr'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(263): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1factory.c(263): error C2059: syntax error : ')'
+         CEcoCEPEngine1.c
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sharedfiles\iecocepengine1.h(46): error C2061: syntax error : identifier 'IEcoCEPEngine1'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sharedfiles\iecocepengine1.h(46): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sharedfiles\iecocepengine1.h(46): error C2449: found '{' at file scope (missing function header?)
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sharedfiles\iecocepengine1.h(48): error C2059: syntax error : '}'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(52): error C2143: syntax error : missing ')' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(52): error C2081: 'IEcoCEPEngine1' : name in formal parameter list illegal
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(52): error C2143: syntax error : missing '{' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(52): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(54): error C2143: syntax error : missing ')' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(54): error C2143: syntax error : missing '{' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(54): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\iecocepaggregation1.h(46): error C2061: syntax error : identifier 'IEcoCEPAggregation1'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\iecocepaggregation1.h(46): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\iecocepaggregation1.h(46): error C2449: found '{' at file scope (missing function header?)
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\iecocepaggregation1.h(48): error C2059: syntax error : '}'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\idecocepaggregation1.h(37): error C2061: syntax error : identifier 'GetIEcoComponentFactoryPtr'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\idecocepaggregation1.h(37): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\idecocepaggregation1.h(37): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(48): error C2065: 'IEcoCEPEngine1' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(48): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(52): error C2065: 'IEcoCEPEngine1' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(52): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(72): error C2061: syntax error : identifier 'CEcoCEPEngine1_AddRef'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(72): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(72): error C2059: syntax error : 'type'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(107): warning C4013: 'deleteCEcoCEPEngine1' undefined; assuming extern returning int
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(107): error C2065: 'IEcoCEPEngine1' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(107): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(124): error C2061: syntax error : identifier 'CEcoCEPEngine1_MyFunction'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(124): error C2059: syntax error : ';'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(124): error C2059: syntax error : 'type'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(174): error C2065: 'IID_IZ' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(174): warning C4133: 'function' : incompatible types - from 'int *' to 'const UGUID *'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(174): error C2039: 'm_pIZ' : is not a member of 'CEcoCEPEngine1'
+                 d:\eco.cep.engine1\github\eco.cep.engine1\headerfiles\cecocepengine1.h(28) : see declaration of 'CEcoCEPEngine1'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(174): error C2198: 'function through pointer' : too few arguments for call
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(182): error C2065: 'CEcoCEPEngine1_AddRef' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(182): error C2099: initializer is not a constant
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(185): error C2065: 'CEcoCEPEngine1_MyFunction' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(185): error C2099: initializer is not a constant
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(199): error C2143: syntax error : missing ')' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(199): error C2081: 'IEcoCEPEngine1' : name in formal parameter list illegal
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(199): error C2143: syntax error : missing '{' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(199): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(199): error C2054: expected '(' to follow 'ppIEcoCEPEngine1'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(260): error C2065: 'CEcoCEPAggregation1' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(260): error C2146: syntax error : missing ';' before identifier 'example'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(261): error C2065: 'example' : undeclared identifier
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(261): error C2143: syntax error : missing ';' before '}'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(274): error C2143: syntax error : missing ')' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(274): error C2143: syntax error : missing '{' before '*'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(274): error C2059: syntax error : ')'
+     1>d:\eco.cep.engine1\github\eco.cep.engine1\sourcefiles\cecocepengine1.c(274): error C2054: expected '(' to follow 'pIEcoCEPEngine1'
+         Generating Code...
+     1>Done Building Project "D:\Eco.CEP.Engine1\github\Eco.CEP.Engine1\AssemblyFiles\Windows\VisualStudio_10\Eco.CEP.Engine1.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.17

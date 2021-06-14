@@ -22,6 +22,7 @@
 
 #include "IEcoCEPEngine1.h"
 #include "IEcoSystem1.h"
+#include "IEcoInterfaceBus1.h"
 #include "IdEcoMemoryManager1.h"
 
 typedef struct CEcoCEPEngine1 {
@@ -37,6 +38,8 @@ typedef struct CEcoCEPEngine1 {
 
     /* Системный интерфейс */
     IEcoSystem1* m_pISys;
+	
+	IEcoInterfaceBus1* m_pIBus;
 
     /* Данные экземпляра */
     char_t* m_Name;

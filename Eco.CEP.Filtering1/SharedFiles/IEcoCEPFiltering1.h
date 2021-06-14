@@ -40,6 +40,9 @@ typedef struct IEcoCEPFiltering1VTbl {
 
     /* IEcoCEPFiltering1 */
     int16_t (*MyFunction)(/* in */ struct IEcoCEPFiltering1* me, /* in */ char_t* Name, /* out */ char_t** CopyName);
+	int16_t (*range)(/* in */ struct IEcoCEPFiltering1* me, /* in */ int16_t *data, int32_t len, int16_t min, int32_t max, /* out */ int16_t *output, int16_t *out_len);
+	int16_t (*less)(/* in */ struct IEcoCEPFiltering1* me, /* in */ int16_t *data, int32_t len, int32_t max, /* out */ int16_t *output, int16_t *out_len);
+	int16_t (*more)(/* in */ struct IEcoCEPFiltering1* me, /* in */ int16_t *data, int32_t len, int16_t min,/* out */ int16_t *output, int16_t *out_len);
 
 } IEcoCEPFiltering1VTbl, *IEcoCEPFiltering1VTblPtr;
 

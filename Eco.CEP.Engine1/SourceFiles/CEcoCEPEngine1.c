@@ -20,6 +20,7 @@
 #include "IEcoSystem1.h"
 #include "IEcoInterfaceBus1.h"
 #include "CEcoCEPEngine1.h"
+#include "IdEcoCEPAggregation1.h"
 
 /*
  *
@@ -159,6 +160,7 @@ int16_t CEcoCEPEngine1_MyFunction(/* in */ struct IEcoCEPEngine1* me, /* in */ c
  */
 int16_t initCEcoCEPEngine1(/*in*/ struct IEcoCEPEngine1* me, /* in */ struct IEcoUnknown *pIUnkSystem) {
     CEcoCEPEngine1* pCMe = (CEcoCEPEngine1*)me;
+
     int16_t result = -1;
 
     /* Проверка указателей */
@@ -168,7 +170,8 @@ int16_t initCEcoCEPEngine1(/*in*/ struct IEcoCEPEngine1* me, /* in */ struct IEc
 
     /* Сохранение указателя на системный интерфейс */
     pCMe->m_pISys = (IEcoSystem1*)pIUnkSystem;
-
+	pCMe->m_pISys->QueryInterface(pCMe->m_pISys, &IID_IEcoInterfaceBus1, (void **)&pCMe->m_pIBus);
+	result = pCMe->m_pIBus->QueryComponent(pCMe->m_pIBus, &CID_EcoCEPAggregation1, 0, &IID_IZ, (void**) &pCMe->m_pIZ);
 
     return result;
 }
@@ -252,6 +255,12 @@ int16_t createCEcoCEPEngine1(/* in */ IEcoUnknown* pIUnkSystem, /* in */ IEcoUnk
 
     return 0;
 }
+
+/*
+void eventHandler() {
+	CEcoCEPAggregation1 example 
+}
+*/
 
 /*
  *
